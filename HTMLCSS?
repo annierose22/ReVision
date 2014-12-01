@@ -1,6 +1,16 @@
-<DOCTYPE! html/>
-  <head>
-  </head>
-  <body>
-    <FONT FACE="dyslexie">dyslexie font</FONT> // call this from external css file
-  </body>
+// 
+
+
+<!DOCTYPE html/>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+The content of the document......
+<FONT FACE="dyslexie">dyslexie font</FONT> // call this from external css file?
+</body>
+
+</html>
+
