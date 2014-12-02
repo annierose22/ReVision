@@ -1,16 +1,27 @@
-// 
-
-
-<!DOCTYPE html/>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Title of the document</title>
-</head>
-
+<head><title>Extension Options</title></head>
 <body>
-The content of the document......
-<FONT FACE="dyslexie">dyslexie font</FONT> // call this from external css file?
-</body>
 
+Font Color:
+<select id="color">
+ // use this? dont think so <option value="red">red</option> 
+</select>
+
+<select id="type">
+<FONT FACE="dyslexie">dyslexie font</FONT> // call this from external css file?
+</select>
+
+<label>
+  <input type="checkbox" id="like">
+  // can make it print something here if we want 
+</label>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
 </html>
+
 
