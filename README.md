@@ -1,10 +1,11 @@
 CS50Project
 ===========
 
-CS50 dyslexia extension
-(should add full description later)
+This CS50 Final Project implements a Chrome extension that makes websites more readable for dyslexics.
+It does so by changing the font to Dyslexie, font color, font size, and background color.  
 
-FIX THIS FIRST 
+
+FIX THIS FIRST
 // will definitely need this later but wasnt working when i tried to get button to appear
 // goes in manifest file in first bracket part i think
 "background": {
