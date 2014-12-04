@@ -4,10 +4,9 @@
   "manifest_version": 2,
   "description": "Chrome extension that makes websites easier to read for dyslexics.",
   "icons": {
-   "default_icon": "icon.png", // change this to be whatever our button will look like
-   "default_popup": "popup.html" // can add pop up if we want
+   "default_icon": "icon.png", // change this to be whatever our button/logo will look like
+   "default_popup": "popup.html" // this is the sidebar popup
   },
-  // not sure whether we should be fiddling with background here or in css
   "default_locale": "en",
   "background": {
     "scripts": "background.html",
@@ -16,20 +15,23 @@
   // customize the options here
   "options_page": "src/options_custom/index.html",
   "page_action": {
-    "icon": " ", // i.e. rainbow slider, color graph etc.
-    "title": "  ",
-    "popup": "  "   // the side bar that holds all the color stuff?
-                    // idk if use popup for that or diff tool
+    "default_icon": " ", // logo that we have to design
+    "default_title": "ReVision",
+    "default_popup": "popup.html"   // the side bar popup that actually has everything
   },
   "permissions": [
     "contentSettings"
   ],
   // pulls content from google for now-
   // should it be that it pulls content from whatever website you're on?
+  // how do we do that- tutorial?
   "content_scripts": [
     {
       "matches": [
         "https://www.google.com/*"
+      ],
+      "js":[
+        "content.js"
       ],
       // the pretty stuff
       "css": [
@@ -37,7 +39,7 @@
       ]
     }
   ],
-
+  // calling dyslexie font from the tff file- also have to do this in css file
   "web_accessible_resources": [
     "resources/dyslexie.ttf"
   ]
