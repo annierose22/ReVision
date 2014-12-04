@@ -35,7 +35,7 @@
       ],
       // the pretty stuff
       "css": [
-        "src/inject/inject.css"
+        "/resources/dyslexie.css" // check if this is the right folder to call it from- should it be .ttf?
       ]
     }
   ],
