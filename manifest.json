@@ -21,10 +21,14 @@
         "https://www.google.com/*"
       ],
       "js":[
-        "content.js"
+        "popup.js",
+        "content.js",
+        "js/colpick.js",
+        "js/jquery-2.1.1.min.js"
       ],
       "css": [
-        "/css/dyslexie.css"
+        "css/dyslexie.css",
+        "css/colpick.css"
       ]
     }
   ],
