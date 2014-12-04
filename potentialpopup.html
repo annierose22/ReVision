@@ -1,0 +1,10 @@
+$(document).ready(function() {
+        fetch_feed()
+        {
+                chrome.extension.sendRequest({'action' : 'fetch_feed', 'url' : 'http://google.com'},
+                        function(response) {
+                                display_stories(response);
+                        }
+                );
+        };
+});
