@@ -10,7 +10,7 @@
   // not sure whether we should be fiddling with background here or in css
   "default_locale": "en",
   "background": {
-    "page": "src/bg/background.html",
+    "scripts": "background.html",
     "persistent": true
   },
   // customize the options here
@@ -36,5 +36,9 @@
         "src/inject/inject.css"
       ]
     }
+  ],
+
+  "web_accessible_resources": [
+    "resources/dyslexie.ttf"
   ]
 }
