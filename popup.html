@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href=popup.css">
+    <title>ReVision Options</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
     <script src="willprobablyaddotherfilelinkehere"></script>
   </head>
   <body tabindex="1" style="overflow: hidden;" class="local">
     <header>
-      <div id="logo"></div> // aka the same picture that our icon will be
+      <div id="logo"></div> <!--aka the same picture that our icon will be-->
     </header>
   <div id=" " class=""></div>
+
+  <!--makes drop down menu of preset colors-->
+  <select id="color">
+  <option value="white">white</option>
+  <option value="blue">blue</option>
+  <option value="black">black</option>
+  <option value="yellow">yellow</option>
+  </select id="color">
+
+  <!-- find a way to link the above to background- i.e. yellow font, black background-->
+  <select id="background-color">
+  </select id="background-color">
+
+  <select id="type">
+  <FONT FACE="dyslexie">dyslexie font</FONT> <!--call this from external css file?-->
+  </select>
+
+  <label>
+    <input type="checkbox" id="check">
+    Checkbox
+  </label>
+
+  <div id="status"></div>
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+
+
+
+
     <footer id="options" role="button">
       <div class="icon"></div>
       <span class= "  ">Options</span>
@@ -17,7 +48,7 @@
 </html>
 
 
-// unclear where this should go in the above code-
+<!--unclear where this should go in the above code-->
 <script type="text/javascript" src="popup.js"></script>
 <div style="width:200px">
     <button id="button">Color all the divs</button>
