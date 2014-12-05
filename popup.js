@@ -18,7 +18,6 @@ window.onload = function() {
     };
 
     $('#picker').colpick({
-      flat:true,
     	layout:'hex',
     	submit:0,
     	colorScheme:'dark',
@@ -30,4 +29,3 @@ window.onload = function() {
     }).keyup(function(){
     	$(this).colpickSetColor(this.value);
     });
-}
