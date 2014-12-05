@@ -1,11 +1,13 @@
-CS50Project
+ReVision
 ===========
 
 This CS50 Final Project implements a Chrome extension that makes websites more readable for dyslexics.
 It does so by changing the font to Dyslexie, font color, font size, and background color.  
 
+Installation
+===========
 Simply download and install this extension like you would any other. It is available in the Chrome Extension Gallery.
-Just download and install it like any chrome extension.
+
 
 
 FIX THIS FIRST
