@@ -11,6 +11,7 @@ Simply download and install this extension like you would any other. It is avail
 
 
 FIX THIS FIRST
+===========
 // will definitely need this later but wasnt working when i tried to get button to appear
 // goes in manifest file in first bracket part i think
 "background": {
