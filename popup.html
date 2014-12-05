@@ -13,10 +13,28 @@
     </header>
 
   <div id=" " class=""></div>
-  <!--(i.e. black and yellow, black and creme, and blue and white, the most successful in the study)-->
-  <!--makes drop down menu of preset colors, hopefully-->
+  <!--makes drop down menu of preset colors-->
+
+<a name="font" id="font"></a>
+<form method="get" action="customize.htm" onsubmit="return setFont()" class="centertext">
+<h2>Change Font:</h2>
+<select name="fontselect" id="fontselect">
+<option value="none">Change Font</option>
+<option value="none">None - Your Browser Setting</option>
+<option value="dyslexie">Dyslexie Font</option>
+<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="sanserif">Verdana (Sans Serif)</option>
+<option style="font-family: 'trebuchet ms', verdana, arial, geneva, helvetica, sans-serif;" value="trebuchet">Trebuchet  (Default)</option>
+<option style="font-family: 'comic sans ms', arial, geneva, helvetica, sans-serif;"  value="comic">Comic Sans</option>
+cnetury gothic
+<option style="font-family: georgia, 'times new roman', times, serif;" value="georgia">Georgia</option>
+<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="combo2">Arial Text / Roman Titles</option>
+<option style="font-family: 'times new roman', times, serif;" value="times">Times Roman</option>
+</select>
+<input type="submit" value="Set Font" title="Choose New Font" />
+</form>  
+
 <form method="get" action="customize.htm" onsubmit="return setStyle()" class="centertext">
-<h3>Change Color Scheme:</h3>
+<h2>Change Color Scheme:</h2>
 <select name="colorselect" id="colorselect">
 <option style="background-color: #FFF; color: #000;" value="none">Your Own Browser Setting</option>
 <option style="background-color: #FDFFFD; color: #335;" value="default">Default Setting</option>
@@ -55,26 +73,6 @@ Text)</option>
 </select>
 <input type="submit" value="Set Color" title="Choose New Color Scheme" />
 </form>
-
-
-<a name="font" id="font"></a>
-<form method="get" action="customize.htm" onsubmit="return setFont()" class="centertext">
-<h3>Change Font:</h3>
-<select name="fontselect" id="fontselect">
-<option value="none">Change Font</option>
-<option value="none">None - Your Browser Setting</option>
-<option value="dyslexie">Dyslexie Font</option>
-<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="sanserif">Verdana (Sans Serif)</option>
-<option style="font-family: 'trebuchet ms', verdana, arial, geneva, helvetica, sans-serif;" value="trebuchet">Trebuchet  (Default)</option>
-<option style="font-family: 'comic sans ms', arial, geneva, helvetica, sans-serif;"  value="comic">Comic Sans</option>
-cnetury gothic
-<option style="font-family: georgia, 'times new roman', times, serif;" value="georgia">Georgia</option>
-<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="combo2">Arial Text / Roman Titles</option>
-<option style="font-family: 'times new roman', times, serif;" value="times">Times Roman</option>
-</select>
-<input type="submit" value="Set Font" title="Choose New Font" />
-</form>
-
 
     <div id="picker"></div>
 
