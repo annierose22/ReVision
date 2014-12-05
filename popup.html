@@ -15,20 +15,71 @@
   <div id=" " class=""></div>
   <!--(i.e. black and yellow, black and creme, and blue and white, the most successful in the study)-->
   <!--makes drop down menu of preset colors, hopefully-->
-  <select id="color">
-    <option value="yellow">yellow</option>
-    <option value="FFEA8A">creme</option>
-    <option value="white">white</option>
-    <option value="black">black</option>
-  </select id="color">
+<form method="get" action="customize.htm" onsubmit="return setStyle()" class="centertext">
+<h3>Change Color Scheme:</h3>
+<select name="colorselect" id="colorselect">
+<option style="background-color: #FFF; color: #000;" value="none">Your Own Browser Setting</option>
+<option style="background-color: #FDFFFD; color: #335;" value="default">Default Setting</option>
+<option style="background-color: #FFF; color: #000;" value="standard">High Contrast - White / Black Text</option>
+<option style="background-color: #FFF; color: #369;" value="whiteblue">White / Blue Text</option>
+<option style="background-color: #FFF; color: #639;" value="whiteviol">White / Violet Text</option>
+<option value="null">- - - - Light Backgrounds: - - - - -</option>
+<option style="background-color: #FFFFF1; color: #000;" value="cream">Cream (Black Text - Red Titles)</option>
+<option style="background-color: #FFFFF1; color: #006;" value="creamblue">Cream 2 (Blue Text - Red Titles)</option>
+<option style="background-color: #FFC; color: #000;" value="yellow">Yellow (Black Text - Green Titles)</option>
+<option style="background-color: #FFC; color: #000;" value="yellowblue">Yellow 2 (Blue Text)</option>
+<option style="background-color: #9CF; color: #000;" value="ocean">Sky Blue (Black Text - Blue Titles)</option>
+<option style="background-color: #0CD; color: #000;" value="turquoise">Turquoise (Black
+Text)</option>
+<option style="background-color: #99C; color: #000;" value="blues">Periwinkle (Black Text)</option>
+<option style="background-color: #9C6; color: #000;" value="garden_dark">Olive Green (Black Text)</option>
+<option style="background-color: #9FC; color: #000;" value="seagreen">Sea Green (Black Text)</option>
+<option style="background-color: #FD8; color: #631;" value="apricot">Apricot (Dark Brown Text)</option>
+<option style="background-color: #E90; color: #631;" value="orange">Orange (Dark Brown Text)</option>
+<option style="background-color: #D9C19D color: #000;" value="brown">Tan (Black Text)</option>
+<option style="background-color: #C96; color: #000;" value="terra_dark">Brown (Black Text)</option>
+<option value="null">- - - Dark Backgrounds - - - -</option>
+<option style="background-color: #000; color: #CCC;" value="black">Black (White Text)</option>
+<option style="background-color: #212121; color: #D0FFD0;" value="chocolate">Black (Green Text)</option>
+<option style="background-color: #000; color: #CC9;" value="midnight">Black (Gold Text - Blue Titles)</option>
+<option style="background-color: #006; color: #F5F5F5;" value="ultramarine">Ultramarine (White Text - Gold Titles)</option>
+<option style="background-color: #00C; color: #FFF;" value="bluebuzz">Electric Blue (White Text)</option>
+<option style="background-color: #303; color: #FFF;" value="aubergine">Deep Purple (White Text)</option>
+<option style="background-color: #590; color: #000;" value="greenblack">Corina Green (Black Text)</option>
+<option style="background-color: #999; color: #FFF;" value="grey_lite">Grey (White Text)</option>
+<option style="background-color: #C69; color: #FFF;" value="rosebud">Rosebud (White Text)</option>
+<option value="null">- - - -Bordered Themes - - -</option>
+<option style="background-color: #FFC; color: #000;" value="goldenrod">Goldenrod (Black Text)</option>
+<option style="background-color: #FCC; color: #F00;" value="hotpink">Hot Pink (Red Text) </option>
+<option style="background-color: #FFF; color: #000;" value="candy">Candy Cream (Red, White &amp; Black)</option>
+</select>
+<input type="submit" value="Set Color" title="Choose New Color Scheme" />
+</form>
 
-  <!-- find a way to link the above to background- i.e. yellow font, black background-->
-  <select id="background-color">
-    <option value="black">black</option>
-    <option value="black">black</option>
-    <option value="blue">blue</option>
-    <option value="white">white</option>
-  </select id="background-color">
+
+<a name="font" id="font"></a>
+<form method="get" action="customize.htm" onsubmit="return setFont()" class="centertext">
+<h3>Change Font:</h3>
+<select name="fontselect" id="fontselect">
+<option value="none">Change Font</option>
+<option value="none">None - Your Browser Setting</option>
+<option>---- Common Fonts for Web Site Use ---</option>
+<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="sanserif">Verdana (Sans Serif)</option>
+<option style="font-family: 'trebuchet ms', verdana, arial, geneva, helvetica, sans-serif;" value="trebuchet">Trebuchet  (Default)</option>
+<option style="font-family: 'comic sans ms', arial, geneva, helvetica, sans-serif;"  value="comic">Comic Sans</option>
+<option style="font-family: georgia, 'times new roman', times, serif;" value="georgia">Georgia</option>
+<option>---- Designed for Dyslexia ----- </option>
+<option value="dyslexie">Dyslexie Font</option>
+<option style="font-family: lexia, 'comic sans ms', arial, geneva, helvetica, sans-serif;" value="lexia">Lexia readable (Requires Download)</option>
+<option> ---- Standard Fonts ---- </option>
+<option style="font-family: 'times new roman', times, serif;" value="times">Times Roman</option>
+<option style="font-family: georgia, 'times new roman', times, serif;" value="combo1">Roman Text / Arial Titles</option>
+<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="combo2">Arial Text / Roman Titles</option>
+</select>
+<input type="submit" value="Set Font" title="Choose New Font" />
+</form>
+<!-- RSPEAK_START -->
+<p>The Dyslexie Font is designed by Christian Boer and will display throughout our site automatically when selected. This font is also available for free download for personal use at <a href="http://www.dyslexiefont.com/" target="_blank">www.dyslexiefont.com</a>.
 
   <select id="type">
     <FONT FACE="dyslexie">dyslexie font</FONT> <!--call this from external css file?-->
