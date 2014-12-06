@@ -13,12 +13,21 @@ body {
     background-color: whitesmoke;
 }
 
-h3, h5, h6 {
+h3, h5 {
     color: black;
-    margin-left: 20px;
-	  padding: 0px;
+    margin-left: 0px;
+	  padding: 0px 0px 0px 0px;
     margin: 0px;
 }
+
+h6 {
+		color: black;
+		font-size: 8px;
+		margin-left: 0px;
+		padding: 0px 0px 0px 0px;
+		margin: 0px;
+}
+
 
 #pickerback {
 	margin:0;
