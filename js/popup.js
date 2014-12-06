@@ -36,10 +36,10 @@ window.onload = function() {
 
     // links font to selectbutton
     $("#presetColors").submit(function() {
-      var text = $("#colorselect").val();
+      var back = $("#colorselect").val();
 
       chrome.tabs.executeScript({
-        code: 'document.body.style.color = "' + text + '"'
+        code: 'document.body.style.backgroundColor = "' + back + '"'
       });
       return false;
     });
