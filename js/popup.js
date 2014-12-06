@@ -4,6 +4,7 @@
 window.onload = function() {
 
 // declares first color picker for font
+
     $('#picker').colpick({
       flat:true,
     	layout:'hex',
@@ -41,6 +42,14 @@ window.onload = function() {
       chrome.tabs.executeScript({
         code: 'document.body.style.backgroundColor = "' + back + '"'
       });
+      var background;
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+          chrome.tabs.executeScript({
+            code: 'document.body.style.color = "' + background + '"'
+          })};
+
       return false;
     });
 
@@ -74,4 +83,5 @@ window.onload = function() {
 
       return false;
     });
+
 };
