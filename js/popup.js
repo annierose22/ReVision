@@ -68,28 +68,10 @@ window.onload = function() {
       /*slect p tag and iterate over it
       element.style.fontFamily = "' + font + '"*/
 
-    // changing font size
-    $("#fontForm").submit(function() {
-      var font = $("#sizeselect").val();
-
-      chrome.tabs.executeScript({
-        code: 'document.body.style.fontSize = "' + font + '"' //CHANGE
-      });
-
-      return false;
-    });
-
-    // links size to selectbutton
-    $("#FINDNAME").submit(function() { //CHANGE
-      var text = $("#sizeselect").val();
-      var back = $("#sizeselect").val();
-
       chrome.tabs.executeScript({
         code: 'document.body.style.fontSize = "' + size + '"'
       });
 
-      return false;
-    });
       return false;
     });
 };
