@@ -15,4 +15,4 @@ chrome.extension.onMessage.addListener(function(message, sender, sendResponse) {
         break;
     }
 });
- // link this to the dyslexie.css file to change the font 
+ // link this to the dyslexie.css file to change the font
