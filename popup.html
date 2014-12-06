@@ -19,6 +19,7 @@
 
 <!--makes drop down menu of preset colors-->
 <!--code pretaining to the font and background drop-down menus was inspired by that of http://www.dyslexia.com/customize.htm-->
+<!--font -->
 <form id="fontForm" class="centertext">
   <h4><font face="dyslexie">Change Font:</FONT></h4>
   <select name="fontselect" id="fontselect">
@@ -36,12 +37,13 @@
   <input type="submit" value="Set Font" title="Choose New Font" />
 </form>
 
+<!--background -->
 <form method="get" action="customize.htm" onsubmit="return setStyle()" class="centertext">
 <h4><font face="dyslexie">Change Color Scheme:</FONT></h4>
 <select name="colorselect" id="colorselect">
-<option style="background-color: #FFF; color: #000;" value="none">Your Own Browser Setting</option>
+<option style="background-color: #FFF; color: #000;" value="none">Browser Setting</option>
 <option style="background-color: #FDFFFD; color: #335;" value="default">Default Setting</option>
-<option style="background-color: #FFF; color: #000;" value="standard">High Contrast - White / Black Text</option>
+<option style="background-color: #FFF; color: #000;" value="standard">High Contrast: White / Black Text</option>
 <option style="background-color: #FFF; color: #369;" value="whiteblue">White / Blue Text</option>
 <option style="background-color: #FFF; color: #639;" value="whiteviol">White / Violet Text</option>
 <option value="null">- - - - Light Backgrounds: - - - - -</option>
@@ -62,8 +64,8 @@ Text)</option>
 <option value="null">- - - Dark Backgrounds - - - -</option>
 <option style="background-color: #000; color: #CCC;" value="black">Black (White Text)</option>
 <option style="background-color: #212121; color: #D0FFD0;" value="chocolate">Black (Green Text)</option>
-<option style="background-color: #000; color: #CC9;" value="midnight">Black (Gold Text - Blue Titles)</option>
-<option style="background-color: #006; color: #F5F5F5;" value="ultramarine">Ultramarine (White Text - Gold Titles)</option>
+<option style="background-color: #000; color: #CC9;" value="midnight">Black (Gold Text with Blue Titles)</option>
+<option style="background-color: #006; color: #F5F5F5;" value="ultramarine">Ultramarine (White Text with Gold Titles)</option>
 <option style="background-color: #00C; color: #FFF;" value="bluebuzz">Electric Blue (White Text)</option>
 <option style="background-color: #303; color: #FFF;" value="aubergine">Deep Purple (White Text)</option>
 <option style="background-color: #590; color: #000;" value="greenblack">Corina Green (Black Text)</option>
@@ -78,6 +80,6 @@ Text)</option>
 </form>
 
     <!-- RSPEAK_START -->
-    <h6>The Dyslexie Font is designed by Christian Boer and call copyright belongs to him. The Dyslexie font is also available as a <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.</h6>
+    <h6>The Dyslexie Font is designed by Christian Boer. The Dyslexie font is also available as a <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.</h6>
   </body>
 </html>
