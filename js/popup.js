@@ -35,18 +35,14 @@ window.onload = function() {
 
     // links font to selectbutton
     $("#presetColors").submit(function() {
-      var text = $("#colorselect").val();
-      var back = $("#colorselect").val();
+      var combo = $("#colorselect").val();
 
       // document.getElementsByTagName("p");
       /*slect p tag and iterate over it
       element.style.fontFamily = "' + font + '"*/
 
       chrome.tabs.executeScript({
-        code: 'document.body.style.color = "' + hex + '"'
-      });
-      chrome.tabs.executeScript({
-        code: 'document.body.style.background = "' + hex + '"'
+        code: 'document.body.style.color = "' + combo + '"'
       });
       return false;
     });
