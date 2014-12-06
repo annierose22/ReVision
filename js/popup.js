@@ -49,18 +49,18 @@ window.onload = function() {
     });
 
 // links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
-    $("#backgroundForm").submit(function() {
+    /*$("#backgroundForm").submit(function() {
       var background = $("#backgroundselect").val();
 
       // document.getElementsByTagName("p");
       /*slect p tag and iterate over it
       element.style.backgroundFamily = "' + background + '"*/
 
-      chrome.tabs.executeScript({
+      /*chrome.tabs.executeScript({
         code: 'document.body.style.backgroundFamily = "' + background-color + '"'
       });
 
       return false;
-    });
+    });*/
 
 };
