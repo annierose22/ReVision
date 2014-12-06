@@ -7,3 +7,5 @@
 	border-right:20px solid green;
 	line-height:20px;
 }
+
+.NoPaddingOrMargin {padding: 0px; margin:0px}
