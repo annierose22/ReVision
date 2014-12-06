@@ -46,9 +46,10 @@ window.onload = function() {
       if ($("#colorselect").val() == "#FFFFF1")
         {
           var background = "#0000FF";
+        }
           chrome.tabs.executeScript({
             code: 'document.body.style.color = "' + background + '"'
-          })};
+          });
 
       return false;
     });
