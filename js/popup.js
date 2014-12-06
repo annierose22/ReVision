@@ -9,12 +9,12 @@ window.onload = function() {
     	layout:'hex',
     	submit:0,
     	colorScheme:'dark',
-    	/*onChange:function(hsb,hex,rgb,el,bySetColor) {
+    	onChange:function(hsb,hex,rgb,el,bySetColor) {
         // links font to color graph
         chrome.tabs.executeScript({
           code: 'document.body.style.color = "#' + hex + '"'
         });
-    	}*/
+    	}
     }).keyup(function(){
     	$(this).colpickSetColor(this.value);
     });
@@ -39,9 +39,10 @@ window.onload = function() {
       layout:'hex',
       submit:0,
       colorScheme:'dark',
+      // links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
       onChange:function(hsb,hex,rgb,el,bySetColor) {
         chrome.tabs.executeScript({
-          code: 'document.body.background-color = "#' + hex + '"'
+          code: 'document.body.background.color = "#' + hex + '"'
         });
       }
     }).keyup(function(){
@@ -49,18 +50,4 @@ window.onload = function() {
     });
 
 // links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
-    /*$("#backgroundForm").submit(function() {
-      var background = $("#backgroundselect").val();*/
-
-      // document.getElementsByTagName("p");
-      /*slect p tag and iterate over it
-      element.style.backgroundFamily = "' + background + '"*/
-
-      /*chrome.tabs.executeScript({
-        code: 'document.body.style.backgroundFamily = "' + background-color + '"'
-      });
-
-      return false;
-    });*/
-
 };
