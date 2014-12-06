@@ -42,7 +42,7 @@ window.onload = function() {
       // links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
       onChange:function(hsb,hex,rgb,el,bySetColor) {
         chrome.tabs.executeScript({
-          code: 'document.body.background.color = "#' + hex + '"'
+          code: 'document.querySelectorAll("div"); = "#' + hex + '"'
         });
       }
     }).keyup(function(){
