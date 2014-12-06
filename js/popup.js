@@ -42,7 +42,7 @@ window.onload = function() {
       element.style.fontFamily = "' + font + '"*/
 
       chrome.tabs.executeScript({
-        code: 'document.body.style.color = "' + combo + '"'
+        code: 'document.body.style.backgroundColor = "' + combo + '"'
       });
       return false;
     });
@@ -61,5 +61,19 @@ window.onload = function() {
       }
     }).keyup(function(){
       $(this).colpickSetColor(this.value);
+    });
+
+    $("#fontSize").submit(function() {
+      var size = $("#sizeselect").val();
+
+      // document.getElementsByTagName("p");
+      /*slect p tag and iterate over it
+      element.style.fontFamily = "' + font + '"*/
+
+      chrome.tabs.executeScript({
+        code: 'document.body.style.fontSize = "' + size + '"'
+      });
+
+      return false;
     });
 };
