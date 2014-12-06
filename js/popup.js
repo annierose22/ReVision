@@ -37,7 +37,7 @@ window.onload = function() {
     $('#pickerback').colpick({
       flat:true,
       layout:'hex',
-      submit:2,
+      submit:0,
       colorScheme:'dark',
       onChange:function(hsb,hex,rgb,el,bySetColor) {
         chrome.tabs.executeScript({
@@ -53,7 +53,7 @@ window.onload = function() {
       var background = $("#backgroundselect").val();
 
       chrome.tabs.executeScript({
-        code: 'document.body.style.background = "' + background + '"'
+        code: 'document.body.style.backgroundFamily = "' + background + '"'
       });
 
       return false;
