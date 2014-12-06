@@ -47,6 +47,51 @@ window.onload = function() {
         {
           var background = "#0000FF";
         }
+      if ($("#colorselect").val() == "#FFFFFF")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFFE")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+      if ($("#colorselect").val() == "#FFFFF1")
+        {
+          var background = "#0000FF";
+        }
+
           chrome.tabs.executeScript({
             code: 'document.body.style.color = "' + background + '"'
           });
