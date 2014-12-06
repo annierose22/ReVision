@@ -37,7 +37,7 @@ window.onload = function() {
     $('#pickerback').colpick({
       flat:true,
       layout:'hex',
-      submit:1,
+      submit:2,
       colorScheme:'dark',
       onChange:function(hsb,hex,rgb,el,bySetColor) {
         chrome.tabs.executeScript({
