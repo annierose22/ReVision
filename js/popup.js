@@ -26,12 +26,12 @@ window.onload = function() {
       /*slect p tag and iterate over it
       element.style.fontFamily = "' + font + '"*/
 
-      /*chrome.tabs.executeScript({
+      chrome.tabs.executeScript({
         code: 'document.body.style.fontFamily = "' + font + '"'
       });
 
       return false;
-    });*/
+    });
 
 // second color slider for background
     $('#pickerback').colpick({
