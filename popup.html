@@ -5,6 +5,7 @@
     <script src="js/jquery-2.1.1.min.js" type="text/javascript"/></script>
     <!--got the color picker from http://colpick.com/plugin but it doesnt show up- by far the easiest to implement tho-->
     <script src="js/colpick.js" type="text/javascript"/></script>
+    <script src="js/popup.js" type="text/javascript"/></script>
     <link rel="stylesheet" href="css/colpick.css" type="text/css"/>
   </head>
   <body tabindex="1" style="overflow: hidden; height: 500px;" class="local">
@@ -12,24 +13,26 @@
       <div id="logo"></div> <!--aka the same picture that our icon will be-->
     </header>
 
+    <div id="picker"></div>
+
+
 <!--makes drop down menu of preset colors-->
 <!--code pretaining to the font and background drop-down menus was inspired by that of http://www.dyslexia.com/customize.htm-->
-<a name="font" id="font"></a>
-<form method="get" action="customize.htm" onsubmit="return setFont()" class="centertext">
-<h4><font face="dyslexie">Change Font:</FONT></h4>
-<select name="fontselect" id="fontselect">
-<option value="none">Change Font</option>
-<option value="none">None - Your Browser Setting</option>
-<option value="dyslexie">Dyslexie Font</option>
-<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="sanserif">Verdana (Sans Serif)</option>
-<option style="font-family: 'trebuchet ms', verdana, arial, geneva, helvetica, sans-serif;" value="trebuchet">Trebuchet  (Default)</option>
-<option style="font-family: 'comic sans ms', arial, geneva, helvetica, sans-serif;"  value="comic">Comic Sans</option>
-<option style="font-family: 'century gothic, arial, courier new, sans-serif; " value="times">Century Gothic</option>
-<option style="font-family: georgia, 'times new roman', times, serif;" value="georgia">Georgia</option>
-<option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="combo2">Arial Text / Roman Titles</option>
-<option style="font-family: 'times new roman', times, serif;" value="times">Times Roman</option>
-</select>
-<input type="submit" value="Set Font" title="Choose New Font" />
+<form id="fontForm" class="centertext">
+  <h4><font face="dyslexie">Change Font:</FONT></h4>
+  <select name="fontselect" id="fontselect">
+    <option value="none">Change Font</option>
+    <option value="none">None - Your Browser Setting</option>
+    <option value="dyslexie">Dyslexie Font</option>
+    <option value="verdana">Verdana (Sans Serif)</option>
+    <option value="trebuchet">Trebuchet (Default)</option>
+    <option style="font-family: 'comic sans ms', arial, geneva, helvetica, sans-serif;"  value="comic">Comic Sans</option>
+    <option style="font-family: 'century gothic, arial, courier new, sans-serif; " value="times">Century Gothic</option>
+    <option style="font-family: georgia, 'times new roman', times, serif;" value="georgia">Georgia</option>
+    <option style="font-family: verdana, arial, geneva, helvetica, sans-serif;" value="combo2">Arial Text / Roman Titles</option>
+    <option style="font-family: 'times new roman', times, serif;" value="times">Times Roman</option>
+  </select>
+  <input type="submit" value="Set Font" title="Choose New Font" />
 </form>
 
 <form method="get" action="customize.htm" onsubmit="return setStyle()" class="centertext">
@@ -72,8 +75,6 @@ Text)</option>
 </select>
 <input type="submit" value="Set Color" title="Choose New Color Scheme" />
 </form>
-
-<div id="picker"></div>
 
     <!-- RSPEAK_START -->
     <h6>The Dyslexie Font is designed by Christian Boer and call copyright belongs to him. The Dyslexie font is also available as a <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.</h6>
