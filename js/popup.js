@@ -9,18 +9,18 @@ window.onload = function() {
     	layout:'hex',
     	submit:0,
     	colorScheme:'dark',
-    	onChange:function(hsb,hex,rgb,el,bySetColor) {
-    		chrome.tabs.executeScript({
+    	/*onChange:function(hsb,hex,rgb,el,bySetColor) {
+        // links font to color graph
+        chrome.tabs.executeScript({
           code: 'document.body.style.color = "#' + hex + '"'
-        });
+        });*/
     	}
     }).keyup(function(){
     	$(this).colpickSetColor(this.value);
     });
-
-// links font to color graph
-    /*$("#fontForm").submit(function() {
-      var font = $("#fontselect").val();*/
+    // links font to selectbutton
+    $("#fontForm").submit(function() {
+      var font = $("#fontselect").val();
 
       // document.getElementsByTagName("p");
       /*slect p tag and iterate over it
