@@ -32,11 +32,12 @@ window.onload = function() {
 
       return false;
     });
+
 // second color slider for background
     $('#pickerback').colpick({
       flat:true,
       layout:'hex',
-      submit:0,
+      submit:1,
       colorScheme:'dark',
       onChange:function(hsb,hex,rgb,el,bySetColor) {
         chrome.tabs.executeScript({
