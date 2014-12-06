@@ -41,7 +41,7 @@ window.onload = function() {
       colorScheme:'dark',
       onChange:function(hsb,hex,rgb,el,bySetColor) {
         chrome.tabs.executeScript({
-          code: 'document.background.style.color = "#' + hex + '"'
+          code: 'document.body.style.color = "#' + hex + '"'
         });
       }
     }).keyup(function(){
