@@ -1,3 +1,10 @@
+html, h1, h2, h3, h4, h5, h6 { height: 100%;
+		max-width: 1050px;
+		margin: 0 auto;
+		padding: 0 5px;
+		letter-spacing: 1px;}
+
+
 #picker {
 	margin:0;
 	padding:0;
@@ -7,5 +14,3 @@
 	border-right:20px solid green;
 	line-height:20px;
 }
-
-.NoPaddingOrMargin {padding: 0px; margin:0px}
