@@ -28,7 +28,6 @@ h6 {
 		margin: 0px;
 }
 
-
 #pickerback {
 	margin:0;
 	padding:0px 0px 200px 0px;
@@ -37,4 +36,13 @@ h6 {
 	height:20px;
 	border-right:20px;
 	line-height:20px;
+}
+
+
+#id1 {
+    color: #000;
+}
+
+#id2{
+		color: #369;
 }
