@@ -13,10 +13,6 @@
       <div id="logo"></div> <!--aka the same picture that our icon will be-->
     </header>
 
-    <div id="picker"></div>
-    <div id="pickerback"></div>
-
-
 <!--makes drop down menu of preset colors-->
 <!--code pretaining to the font and background drop-down menus was inspired by that of http://www.dyslexia.com/customize.htm-->
 <!--font -->
@@ -37,9 +33,11 @@
   <input type="submit" value="Set Font" title="Choose New Font" />
 </form>
 
+<div id="picker"></div>
+
 <!--background -->
 <form method="get" action="customize.htm" onsubmit="return setStyle()" class="centertext">
-<h4><font face="dyslexie">Change Color Scheme:</FONT></h4>
+<h4><font face="dyslexie">Change Background/Scheme:</FONT></h4>
 <select name="colorselect" id="colorselect">
 <option style="background-color: #FFF; color: #000;" value="none">Browser Setting</option>
 <option style="background-color: #FDFFFD; color: #335;" value="default">Default Setting</option>
@@ -78,6 +76,8 @@ Text)</option>
 </select>
 <input type="submit" value="Set Color" title="Choose New Color Scheme" />
 </form>
+
+<div id="pickerback"></div>
 
     <!-- RSPEAK_START -->
     <h6>The Dyslexie Font is designed by Christian Boer. The Dyslexie font is also available as a <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.</h6>
