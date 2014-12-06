@@ -34,7 +34,7 @@ window.onload = function() {
     });
 
 // second color slider for background
-    $('#pickerback').colpick({
+    /*$('#pickerback').colpick({
       flat:true,
       layout:'hex',
       submit:0,
@@ -46,7 +46,7 @@ window.onload = function() {
       }
     }).keyup(function(){
       $(this).colpickSetColor(this.value);
-    });
+    });*/
 
 // links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
     /*$("#backgroundForm").submit(function() {
