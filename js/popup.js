@@ -52,6 +52,10 @@ window.onload = function() {
     $("#backgroundForm").submit(function() {
       var background = $("#backgroundselect").val();
 
+      // document.getElementsByTagName("p");
+      /*slect p tag and iterate over it
+      element.style.backgroundFamily = "' + background + '"*/
+
       chrome.tabs.executeScript({
         code: 'document.body.style.backgroundFamily = "' + background + '"'
       });
