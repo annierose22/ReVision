@@ -45,9 +45,34 @@
   <form id="presetColors" method="get" action="popup.html" onsubmit="return setStyle()" class="centertext">
     <h5><font face="dyslexie">Change Theme:</font></h5>
     <select name="colorselect" id="colorselect">
-      <option value="none" id="id1">Browser Setting</option>
-      <option value="#FFFFF1" id="id2">Cream</option>
-      <option value="#0CD" id="id3">Turquoise (Black Text)</option>
+      <option value="none">Browser Setting</option>
+      <option value="#FFFFF1">Cream</option>
+      <option value="#FDFFFD">Default Setting</option>
+      <option value="#FFF">High Contrast: White / Black Text</option>
+      <option value="#FFFFFE">White / Blue Text</option>
+      <option value="#FFFEFF">White / Violet Text</option>
+      <option value="null">- - - - Light Backgrounds: - - - - -</option>
+      <option value="#FFFFF1">Cream (Black Text)</option>
+      <option value="#FFFFF1">Cream 2 (Blue Text)</option>
+      <option value="#FFC">Yellow (Black Text)</option>
+      <option value="#FFC">Yellow 2 (Blue Text)</option>
+      <option value="#9CF">Sky Blue (Black Text)</option>
+      <option value="#0CD">Turquoise (Black Text)</option>
+      <option value="#99C">Periwinkle (Black Text)</option>
+      <option value="#9C6">Olive Green (Black Text)</option>
+      <option value="#9FC">Sea Green (Black Text)</option>
+      <option value="#FD8">Apricot (Dark Brown Text)</option>
+      <option value="#E90">Orange (Dark Brown Text)</option>
+      <option value="null">- - - Dark Backgrounds - - - -</option>
+      <option value="#000">Black (White Text)</option>
+      <option value="#212121">Black (Green Text)</option>
+      <option value="#000">Black (Gold Text)</option>
+      <option value="#006">Ultramarine (White Text)</option>
+      <option value="#00C">Electric Blue (White Text)</option>
+      <option value="#303">Deep Purple (White Text)</option>
+      <option value="#590">Corina Green (Black Text)</option>
+      <option value="#999">Grey (White Text)</option>
+      <option value="#C69">Rosebud (White Text)</option>
       <!--<option style="background-color: #FDFFFD; color: #335;" value="default">Default Setting</option>
       <option style="background-color: #FFF; color: #000;" value="standard">High Contrast: White / Black Text</option>
       <option style="background-color: #FFF; color: #369;" value="whiteblue">White / Blue Text</option>
@@ -59,54 +84,54 @@
       <option style="background-color: #FFC; color: #000;" value="yellowblue">Yellow 2 (Blue Text)</option>
       <option style="background-color: #9CF; color: #000;" value="ocean">Sky Blue (Black Text - Blue Titles)</option>
       <option style="background-color: #0CD; color: #000;" value="turquoise">Turquoise (Black Text)</option>
-        <option style="background-color: #99C; color: #000;" value="blues">Periwinkle (Black Text)</option>
-        <option style="background-color: #9C6; color: #000;" value="garden_dark">Olive Green (Black Text)</option>
-        <option style="background-color: #9FC; color: #000;" value="seagreen">Sea Green (Black Text)</option>
-        <option style="background-color: #FD8; color: #631;" value="apricot">Apricot (Dark Brown Text)</option>
-        <option style="background-color: #E90; color: #631;" value="orange">Orange (Dark Brown Text)</option>
-        <option style="background-color: #D9C19D color: #000;" value="brown">Tan (Black Text)</option>
-        <option style="background-color: #C96; color: #000;" value="terra_dark">Brown (Black Text)</option>
-        <option value="null">- - - Dark Backgrounds - - - -</option>
-        <option style="background-color: #000; color: #CCC;" value="black">Black (White Text)</option>
-        <option style="background-color: #212121; color: #D0FFD0;" value="chocolate">Black (Green Text)</option>
-        <option style="background-color: #000; color: #CC9;" value="midnight">Black (Gold Text with Blue Titles)</option>
-        <option style="background-color: #006; color: #F5F5F5;" value="ultramarine">Ultramarine (White Text with Gold Titles)</option>
-        <option style="background-color: #00C; color: #FFF;" value="bluebuzz">Electric Blue (White Text)</option>
-        <option style="background-color: #303; color: #FFF;" value="aubergine">Deep Purple (White Text)</option>
-        <option style="background-color: #590; color: #000;" value="greenblack">Corina Green (Black Text)</option>
-        <option style="background-color: #999; color: #FFF;" value="grey_lite">Grey (White Text)</option>
-        <option style="background-color: #C69; color: #FFF;" value="rosebud">Rosebud (White Text)</option>
-        <option value="null">- - - -Bordered Themes - - -</option>
-        <option style="background-color: #FFC; color: #000;" value="goldenrod">Goldenrod (Black Text)</option>
-        <option style="background-color: #FCC; color: #F00;" value="hotpink">Hot Pink (Red Text) </option>
-        <option style="background-color: #FFF; color: #000;" value="candy">Candy Cream (Red, White &amp; Black)</option>-->
-      </select>
-      <input type="submit" value="Set Color" title="Choose New Color Scheme" />
-    </form>
+      <option style="background-color: #99C; color: #000;" value="blues">Periwinkle (Black Text)</option>
+      <option style="background-color: #9C6; color: #000;" value="garden_dark">Olive Green (Black Text)</option>
+      <option style="background-color: #9FC; color: #000;" value="seagreen">Sea Green (Black Text)</option>
+      <option style="background-color: #FD8; color: #631;" value="apricot">Apricot (Dark Brown Text)</option>
+      <option style="background-color: #E90; color: #631;" value="orange">Orange (Dark Brown Text)</option>
+      <option style="background-color: #D9C19D color: #000;" value="brown">Tan (Black Text)</option>
+      <option style="background-color: #C96; color: #000;" value="terra_dark">Brown (Black Text)</option>
+      <option value="null">- - - Dark Backgrounds - - - -</option>
+      <option style="background-color: #000; color: #CCC;" value="black">Black (White Text)</option>
+      <option style="background-color: #212121; color: #D0FFD0;" value="chocolate">Black (Green Text)</option>
+      <option style="background-color: #000; color: #CC9;" value="midnight">Black (Gold Text with Blue Titles)</option>
+      <option style="background-color: #006; color: #F5F5F5;" value="ultramarine">Ultramarine (White Text with Gold Titles)</option>
+      <option style="background-color: #00C; color: #FFF;" value="bluebuzz">Electric Blue (White Text)</option>
+      <option style="background-color: #303; color: #FFF;" value="aubergine">Deep Purple (White Text)</option>
+      <option style="background-color: #590; color: #000;" value="greenblack">Corina Green (Black Text)</option>
+      <option style="background-color: #999; color: #FFF;" value="grey_lite">Grey (White Text)</option>
+      <option style="background-color: #C69; color: #FFF;" value="rosebud">Rosebud (White Text)</option>
+      <option value="null">- - - -Bordered Themes - - -</option>
+      <option style="background-color: #FFC; color: #000;" value="goldenrod">Goldenrod (Black Text)</option>
+      <option style="background-color: #FCC; color: #F00;" value="hotpink">Hot Pink (Red Text) </option>
+      <option style="background-color: #FFF; color: #000;" value="candy">Candy Cream (Red, White &amp; Black)</option>-->
+    </select>
+    <input type="submit" value="Set Color" title="Choose New Color Scheme" />
+  </form>
 
-    <div id="pickerback"></div>
+  <div id="pickerback"></div>
 
-<form id="fontSize" method="get" action="customize.htm" onsubmit="return setSize()" class="centertext">
-<h5><font face="dyslexie">Change Font Size:</font></h5>
-  <select name="sizeselect" id="sizeselect">
-    <option value="none">Select Font Size</option>
-    <option value="x-small">Very Small</option>
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-    <option value="x-large">Very Large</option>
-    <option value="xx-large">Huge</option>
-  </select>
-<input type="submit" value="Set Font Size" title="Set Font Size" />
-</form>
+  <form id="fontSize" method="get" action="customize.htm" onsubmit="return setSize()" class="centertext">
+    <h5><font face="dyslexie">Change Font Size:</font></h5>
+    <select name="sizeselect" id="sizeselect">
+      <option value="none">Select Font Size</option>
+      <option value="x-small">Very Small</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+      <option value="x-large">Very Large</option>
+      <option value="xx-large">Huge</option>
+    </select>
+    <input type="submit" value="Set Font Size" title="Set Font Size" />
+  </form>
 
-    <!-- RSPEAK_START -->
-    <h6>
-      <font face="dyslexie">
-        The Dyslexie Font is designed by Christian Boer.
-        The Dyslexie font is also available as a
-        <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.
-      </font>
-    </h6>
-  </body>
+  <!-- RSPEAK_START -->
+  <h6>
+    <font face="dyslexie">
+      The Dyslexie Font is designed by Christian Boer.
+      The Dyslexie font is also available as a
+      <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.
+    </font>
+  </h6>
+</body>
 </html>
