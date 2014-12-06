@@ -57,7 +57,7 @@ window.onload = function() {
       element.style.backgroundFamily = "' + background + '"*/
 
       chrome.tabs.executeScript({
-        code: 'document.body.style.backgroundFamily = "' + background + '"'
+        code: 'document.body.style.backgroundFamily = "' + background-color + '"'
       });
 
       return false;
