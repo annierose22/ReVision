@@ -1,22 +1,9 @@
 /*
 // Sets the html document to be opened as a popup when the user clicks on the browser action's icon
-chrome.browserAction.setPopup(object details) // add object details lol
-
-// actually gets the html document set as the popup for this browser action.
-// not sure if this should be in this file? think so though
-chrome.browserAction.getPopup(object details, function callback)
-
-chrome.browserAction.setIcon(object details, function callback)
-
 */
-// pop-up has one button -when user clicks it, sends message to background script
 window.onload = function() {
-    // document.getElementById("button").onclick = function() {
-    //     chrome.extension.sendMessage({
-    //         type: "color-divs"
-    //     });
-    // };
 
+// declares first color picker for font
     $('#picker').colpick({
       flat:true,
     	layout:'hex',
@@ -31,6 +18,21 @@ window.onload = function() {
     	$(this).colpickSetColor(this.value);
     });
 
+// links font to color graph
+    $("#fontForm").submit(function() {
+      var font = $("#fontselect").val();
+
+      // document.getElementsByTagName("p");
+      /*slect p tag and iterate over it
+      element.style.fontFamily = "' + font + '"*/
+
+      chrome.tabs.executeScript({
+        code: 'document.body.style.fontFamily = "' + font + '"'
+      });
+
+      return false;
+    });
+// second color slider for background
     $('#pickerback').colpick({
       flat:true,
       layout:'hex',
@@ -45,17 +47,15 @@ window.onload = function() {
       $(this).colpickSetColor(this.value);
     });
 
-    $("#fontForm").submit(function() {
-      var font = $("#fontselect").val();
-
-      // document.getElementsByTagName("p");
-      /*slect p tag and iterate over it
-      element.style.fontFamily = "' + font + '"*/
+// links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
+    $("#backgroundForm").submit(function() {
+      var background = $("#backgroundselect").val();
 
       chrome.tabs.executeScript({
-        code: 'document.body.style.fontFamily = "' + font + '"'
+        code: 'document.body.style.background = "' + background + '"'
       });
 
       return false;
     });
+
 };
