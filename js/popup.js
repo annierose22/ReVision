@@ -61,14 +61,13 @@ window.onload = function() {
       $(this).colpickSetColor(this.value);
     });
 
-<<<<<<< HEAD
     $("#fontSize").submit(function() {
       var size = $("#sizeselect").val();
 
       // document.getElementsByTagName("p");
       /*slect p tag and iterate over it
       element.style.fontFamily = "' + font + '"*/
-=======
+
     // changing font size
     $("#fontForm").submit(function() {
       var font = $("#sizeselect").val();
@@ -84,18 +83,13 @@ window.onload = function() {
     $("#FINDNAME").submit(function() { //CHANGE
       var text = $("#sizeselect").val();
       var back = $("#sizeselect").val();
->>>>>>> FETCH_HEAD
 
       chrome.tabs.executeScript({
         code: 'document.body.style.fontSize = "' + size + '"'
       });
-<<<<<<< HEAD
 
       return false;
     });
-=======
       return false;
     });
-
->>>>>>> FETCH_HEAD
 };
