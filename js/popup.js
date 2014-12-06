@@ -18,6 +18,7 @@ window.onload = function() {
     }).keyup(function(){
     	$(this).colpickSetColor(this.value);
     });
+
     // links font to selectbutton
     $("#fontForm").submit(function() {
       var font = $("#fontselect").val();
@@ -37,10 +38,6 @@ window.onload = function() {
     $("#presetColors").submit(function() {
       var combo = $("#colorselect").val();
 
-      // document.getElementsByTagName("p");
-      /*slect p tag and iterate over it
-      element.style.fontFamily = "' + font + '"*/
-
       chrome.tabs.executeScript({
         code: 'document.body.style.color = "' + combo + '"'
       });
@@ -53,7 +50,8 @@ window.onload = function() {
       layout:'hex',
       submit:0,
       colorScheme:'dark',
-      // links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
+
+      // links the background to the color graph
       onChange:function(hsb,hex,rgb,el,bySetColor) {
         chrome.tabs.executeScript({
           code: 'document.body.style.backgroundColor = "#' + hex + '"'
@@ -62,4 +60,27 @@ window.onload = function() {
     }).keyup(function(){
       $(this).colpickSetColor(this.value);
     });
+
+    // changing font size
+    $("#fontForm").submit(function() {
+      var font = $("#sizeselect").val();
+
+      chrome.tabs.executeScript({
+        code: 'document.body.style.fontSize = "' + font + '"' //CHANGE
+      });
+
+      return false;
+    });
+
+    // links size to selectbutton
+    $("#FINDNAME").submit(function() { //CHANGE
+      var text = $("#sizeselect").val();
+      var back = $("#sizeselect").val();
+
+      chrome.tabs.executeScript({
+        code: 'document.body.style.fontSize = "' + size + '"'
+      });
+      return false;
+    });
+
 };
