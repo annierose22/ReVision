@@ -31,6 +31,20 @@ window.onload = function() {
     	$(this).colpickSetColor(this.value);
     });
 
+    $('#pickerback').colpick({
+      flat:true,
+      layout:'hex',
+      submit:0,
+      colorScheme:'dark',
+      onChange:function(hsb,hex,rgb,el,bySetColor) {
+        chrome.tabs.executeScript({
+          code: 'document.body.style.color = "#' + hex + '"'
+        });
+      }
+    }).keyup(function(){
+      $(this).colpickSetColor(this.value);
+    });
+
     $("#fontForm").submit(function() {
       var font = $("#fontselect").val();
 
