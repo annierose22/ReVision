@@ -19,19 +19,19 @@ window.onload = function() {
     });
 
 // links font to color graph
-    $("#fontForm").submit(function() {
-      var font = $("#fontselect").val();
+    /*$("#fontForm").submit(function() {
+      var font = $("#fontselect").val();*/
 
       // document.getElementsByTagName("p");
       /*slect p tag and iterate over it
       element.style.fontFamily = "' + font + '"*/
 
-      chrome.tabs.executeScript({
+      /*chrome.tabs.executeScript({
         code: 'document.body.style.fontFamily = "' + font + '"'
       });
 
       return false;
-    });
+    });*/
 
 // second color slider for background
     $('#pickerback').colpick({
@@ -49,18 +49,18 @@ window.onload = function() {
     });
 
 // links the background to the color graph- THIS DOESNT WORK_ STILL LINKS TO FONT
-    $("#backgroundForm").submit(function() {
-      var background = $("#backgroundselect").val();
+    /*$("#backgroundForm").submit(function() {
+      var background = $("#backgroundselect").val();*/
 
       // document.getElementsByTagName("p");
       /*slect p tag and iterate over it
       element.style.backgroundFamily = "' + background + '"*/
 
-      chrome.tabs.executeScript({
+      /*chrome.tabs.executeScript({
         code: 'document.body.style.backgroundFamily = "' + background-color + '"'
       });
 
       return false;
-    });
+    });*/
 
 };
