@@ -13,8 +13,8 @@ window.onload = function() {
         // links font to color graph
         chrome.tabs.executeScript({
           code: 'document.body.style.color = "#' + hex + '"'
-        });*/
-    	}
+        });
+    	}*/
     }).keyup(function(){
     	$(this).colpickSetColor(this.value);
     });
