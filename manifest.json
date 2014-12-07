@@ -28,7 +28,6 @@
         "js/jquery-2.1.1.min.js"
       ],
       "css": [
-        "css/dyslexie.css",
         "css/colpick.css"
       ]
     }
