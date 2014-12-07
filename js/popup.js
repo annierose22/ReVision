@@ -43,58 +43,105 @@ window.onload = function() {
         code: 'document.body.style.backgroundColor = "' + back + '"'
       });
       var background;
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#FDFFFD")
         {
-          var background = "#0000FF";
+          var background = "#335";
         }
-      if ($("#colorselect").val() == "#FFFFFF")
+      if ($("#colorselect").val() == "#FFF")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
       if ($("#colorselect").val() == "#FFFFFE")
         {
-          var background = "#0000FF";
+          var background = "#369";
+        }
+      if ($("#colorselect").val() == "#FFFEFF")
+        {
+          var background = "#639";
         }
       if ($("#colorselect").val() == "#FFFFF1")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#FFFFF2")
         {
-          var background = "#0000FF";
+          var background = "#369";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#FFC")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#FFFFCD")
         {
-          var background = "#0000FF";
+          var background = "#369";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#9CF")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#0CD")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#99C")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#9C6")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
-      if ($("#colorselect").val() == "#FFFFF1")
+      if ($("#colorselect").val() == "#9FC")
         {
-          var background = "#0000FF";
+          var background = "#000";
         }
-
-          chrome.tabs.executeScript({
-            code: 'document.body.style.color = "' + background + '"'
-          });
+      if ($("#colorselect").val() == "#FD8")
+        {
+          var background = "#631";
+        }
+      if ($("#colorselect").val() == "#E90")
+        {
+          var background = "#631";
+        }
+      if ($("#colorselect").val() == "#000")
+        {
+          var background = "#CCC";
+        }
+      if ($("#colorselect").val() == "#212121")
+        {
+          var background = "#D0FFD0";
+        }
+      if ($("#colorselect").val() == "#000001")
+        {
+          var background = "#CC9";
+        }
+      if ($("#colorselect").val() == "#006")
+        {
+          var background = "#F5F5F5";
+        }
+      if ($("#colorselect").val() == "#00C")
+        {
+          var background = "#FFF";
+        }
+      if ($("#colorselect").val() == "#303")
+        {
+          var background = "#FFF";
+        }
+      if ($("#colorselect").val() == "#590")
+        {
+          var background = "#000";
+        }
+      if ($("#colorselect").val() == "#999")
+        {
+          var background = "#FFF";
+        }
+      if ($("#colorselect").val() == "#C69")
+        {
+          var background = "#FFF";
+        }
+      chrome.tabs.executeScript({
+          code: 'document.body.style.color = "' + background + '"'
+        });
 
       return false;
     });
