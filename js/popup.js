@@ -24,10 +24,6 @@ window.onload = function() {
     $("#fontForm").submit(function() {
       var font = $("#fontselect").val();
 
-      // document.getElementsByTagName("p");
-      /*slect p tag and iterate over it
-      element.style.fontFamily = "' + font + '"*/
-
       chrome.tabs.executeScript({
         code: 'document.body.style.fontFamily = "' + font + '"'
       });
@@ -37,110 +33,110 @@ window.onload = function() {
 
     // links font to selectbutton
     $("#presetColors").submit(function() {
-      var back = $("#colorselect").val();
+      var background = $("#colorselect").val();
 
       chrome.tabs.executeScript({
-        code: 'document.body.style.backgroundColor = "' + back + '"'
+        code: 'document.body.style.backgroundColor = "' + background + '"'
       });
       var background;
       if ($("#colorselect").val() == "#FDFFFD")
         {
-          var background = "#335";
+          var text = "#335";
         }
       if ($("#colorselect").val() == "#FFF")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#FFFFFE")
         {
-          var background = "#369";
+          var text = "#369";
         }
       if ($("#colorselect").val() == "#FFFEFF")
         {
-          var background = "#639";
+          var text = "#639";
         }
       if ($("#colorselect").val() == "#FFFFF1")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#FFFFF2")
         {
-          var background = "#369";
+          var text = "#369";
         }
       if ($("#colorselect").val() == "#FFC")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#FFFFCD")
         {
-          var background = "#369";
+          var text = "#369";
         }
       if ($("#colorselect").val() == "#9CF")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#0CD")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#99C")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#9C6")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#9FC")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#FD8")
         {
-          var background = "#631";
+          var text = "#631";
         }
       if ($("#colorselect").val() == "#E90")
         {
-          var background = "#631";
+          var text = "#631";
         }
       if ($("#colorselect").val() == "#000")
         {
-          var background = "#CCC";
+          var text = "#CCC";
         }
       if ($("#colorselect").val() == "#212121")
         {
-          var background = "#D0FFD0";
+          var text = "#D0FFD0";
         }
       if ($("#colorselect").val() == "#000001")
         {
-          var background = "#CC9";
+          var text = "#CC9";
         }
       if ($("#colorselect").val() == "#006")
         {
-          var background = "#F5F5F5";
+          var text = "#F5F5F5";
         }
       if ($("#colorselect").val() == "#00C")
         {
-          var background = "#FFF";
+          var text = "#FFF";
         }
       if ($("#colorselect").val() == "#303")
         {
-          var background = "#FFF";
+          var text = "#FFF";
         }
       if ($("#colorselect").val() == "#590")
         {
-          var background = "#000";
+          var text = "#000";
         }
       if ($("#colorselect").val() == "#999")
         {
-          var background = "#FFF";
+          var text = "#FFF";
         }
       if ($("#colorselect").val() == "#C69")
         {
-          var background = "#FFF";
+          var text = "#FFF";
         }
       chrome.tabs.executeScript({
-          code: 'document.body.style.color = "' + background + '"'
+          code: 'document.body.style.color = "' + text + '"'
         });
 
       return false;
@@ -165,10 +161,6 @@ window.onload = function() {
 
     $("#fontSize").submit(function() {
       var size = $("#sizeselect").val();
-
-      // document.getElementsByTagName("p");
-      /*slect p tag and iterate over it
-      element.style.fontFamily = "' + font + '"*/
 
       chrome.tabs.executeScript({
         code: 'document.body.style.fontSize = "' + size + '"'

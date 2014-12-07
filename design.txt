@@ -4,6 +4,7 @@ values that we can use in our JavaScript file. Popup.css is used to determine wh
 like that shows up when one clicks on our extension. It contains simple CSS that determines its dimensions
 and background, as well as the dimensions of the "color pickers", which are the color option sliders used in
 the extension for selecting the font color and background.
+
   We wanted to make the layout of the extension's popup window clear and accessible, so we have separated it
 into three categories: font type, color scheme, and font size. The project is meant to help people with
 dyslexia, so we made the text in our popup window appear in the dyslexie font, which is a font specifically
@@ -12,8 +13,26 @@ list of potential fonts to switch website's text to. The design for the layout o
 the dimensions, padding, and background which is in popup.css as already mentioned) is actually done in the html
 file popup.html, because the layout we wanted only called for a selection of font and a particular order of
 divs in the popup, which does not require a css file.
+
   The most interesting stuff in our project happens in the popup.js file. This is where the actual functionality
 of most of the project comes from. We use popup.js to link the option values from the html file to the actual
 web page that a user is on and trying to change, as well as where we link what we call the "color pickers",
-which are sliders with a full spectrum of the colors and possible shades, which returns a hex value that we can
-use
+which are sliders with a full spectrum of the colors and possible shades, which returns a hex value that we
+inject into the web page for either its text or background (depending on the slider, as we have one for both).
+These color pickers were one of the hardest elements to implement, but we were able to find code on line that
+contained the css necessary to use them (we call this css file colpick.css), so we were left just needing to
+instantiate them in the popup window and override the website's font/background color with the hex value taken
+from the pickers. We then change the color using the chrome.tabs.executeScript function to set the document
+body's color to hex value of the picker. We use something similar for the font options, instead changing the
+document body's fontFamily, and something similar for changing the font size.
+
+The way that we implement the preset color schemes, which have been shown to be more readable for people with
+dyslexia, is similar to the way we implement the changing of Font type, but slightly more complicated. Since one
+can only assign an option in an html file with one value, we had trouble assigning a second value for the text
+(the preset color schemes change both the background and the text). What we ended up doing was assigning each
+option a hex value that corresponded to the background color we wanted it to have, and injected that color
+into the web page via the popup.js file in the same way as the font or the color from the color pickers (using
+chrome.tabs.executeScript). We then had to make a series of if statements in popup.js that asked for the hex
+value that was selected, and depending on this background color hex value, assigned a different hex value to
+the variable called 'text' which represented text color. We then sent the hex value assigned to 'text' to the
+web page in the same way as before (with chrome.tabs.executeScript). 
