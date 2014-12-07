@@ -1,0 +1,19 @@
+  Most of the design of our project comes from three files: popup.html, popup.css, and popup.js. This html file
+contains all of the html of the popup window, tagging all of the options in the various dropdown menus with
+values that we can use in our JavaScript file. Popup.css is used to determine what the popup window will look
+like that shows up when one clicks on our extension. It contains simple CSS that determines its dimensions
+and background, as well as the dimensions of the "color pickers", which are the color option sliders used in
+the extension for selecting the font color and background.
+  We wanted to make the layout of the extension's popup window clear and accessible, so we have separated it
+into three categories: font type, color scheme, and font size. The project is meant to help people with
+dyslexia, so we made the text in our popup window appear in the dyslexie font, which is a font specifically
+designed to improve reading for dyslexics and which we use as the primary option for font in the extension's
+list of potential fonts to switch website's text to. The design for the layout of this popup window (other than
+the dimensions, padding, and background which is in popup.css as already mentioned) is actually done in the html
+file popup.html, because the layout we wanted only called for a selection of font and a particular order of
+divs in the popup, which does not require a css file.
+  The most interesting stuff in our project happens in the popup.js file. This is where the actual functionality
+of most of the project comes from. We use popup.js to link the option values from the html file to the actual
+web page that a user is on and trying to change, as well as where we link what we call the "color pickers",
+which are sliders with a full spectrum of the colors and possible shades, which returns a hex value that we can
+use
