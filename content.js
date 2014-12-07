@@ -1,6 +1,5 @@
-// listens for a message (i.e. which preset option or combo of colors the user picked)
 // selects all divs on the current page, and changes their background color.
-// attached the listener to chrome.extension.onMessage in this doc- important for other docs maybe?
+// attached the listener to chrome.extension.onMessage 
 chrome.extension.onMessage.addListener(function(message, sender, sendResponse) {
     switch(message.type) {
         case "colors-div":

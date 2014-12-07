@@ -1,110 +1,109 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>ReVision</title>
-  <link rel="stylesheet" href="popup.css" type="text/css"/>
-  <center><img src="/images/logo.png" alt="ReVision logo" style="width:75px;height:75px"></center>
-  <h3 id="regional" align="center">
-    <center>
-      <font face="dyslexie">ReVision</font>
-    </center>
-  </h3>
-  <script src="js/jquery-2.1.1.min.js" type="text/javascript"/></script>
-  <!--got the color picker from http://colpick.com/plugin but it doesnt show up- by far the easiest to implement tho-->
-  <script src="js/colpick.js" type="text/javascript"/></script>
-  <script src="js/popup.js" type="text/javascript"/></script>
-  <link rel="stylesheet" href="css/colpick.css" type="text/css"/>
-  <link rel="stylesheet" href="popup.css" type="text/css"/>
-</head>
-<body tabindex="1" style="overflow: hidden; height: 500px; width: 215px;" class="local">
+  <head>
+    <title>ReVision</title>
+    <link rel="stylesheet" href="popup.css" type="text/css"/>
+    <center><img src="/images/logo.png" alt="ReVision logo" style="width:75px;height:75px"></center>
+    <h3 id="regional" align="center">
+      <center>
+        <font face="dyslexie">ReVision</font>
+      </center>
+    </h3>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"/></script>
+    <!--got the color picker from http://colpick.com/plugin -->
+    <script src="js/colpick.js" type="text/javascript"/></script>
+    <script src="js/popup.js" type="text/javascript"/></script>
+    <link rel="stylesheet" href="css/colpick.css" type="text/css"/>
+    <link rel="stylesheet" href="popup.css" type="text/css"/>
+  </head>
+  <body tabindex="1" style="overflow: hidden; height: 500px; width: 215px;" class="local">
 
-  <!--makes drop down menu of preset colors-->
-  <!--code pretaining to the font and background drop-down menus was inspired by that of http://www.dyslexia.com/customize.htm-->
-  <!--font -->
-  <form id="fontForm" class="centertext">
-    <h5><font face="dyslexie">Change Font:</font></h5>
-    <select name="fontselect" id="fontselect">
-      <option value="none">Change Font</option>
-      <option value="dyslexie">Dyslexie Font</option>
-      <option value="Verdana">Verdana (Sans Serif)</option>
-      <option value="Trebuchet MS">Trebuchet (Default)</option>
-      <option value="Comic Sans MS">Comic Sans</option>
-      <option value="Century Gothic">Century Gothic</option>
-      <option value="Georgia">Georgia</option>
-      <option value="Arial">Arial</option>
-      <option value="Helvetica Neue">Helvetica</option>
-      <option value="Courier New">Courier</option>
-      <option value="Times New Roman">Times Roman</option>
-    </select>
-    <input type="submit" value="Set Font" title="Choose New Font" />
-  </form>
+    <!--makes drop down menu of preset colors-->
+    <!--code pertaining to the font and background drop-down menus was inspired by that of http://www.dyslexia.com/customize.htm-->
+    <!--font -->
+    <form id="fontForm" class="centertext">
+      <h5><font face="dyslexie">Change Font:</font></h5>
+      <select name="fontselect" id="fontselect">
+        <option value="none">Change Font</option>
+        <option value="dyslexie">Dyslexie Font</option>
+        <option value="Verdana">Verdana (Sans Serif)</option>
+        <option value="Trebuchet MS">Trebuchet (Default)</option>
+        <option value="Comic Sans MS">Comic Sans</option>
+        <option value="Century Gothic">Century Gothic</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Arial">Arial</option>
+        <option value="Helvetica Neue">Helvetica</option>
+        <option value="Courier New">Courier</option>
+        <option value="Times New Roman">Times Roman</option>
+      </select>
+      <input type="submit" value="Set Font" title="Choose New Font" />
+    </form>
 
-  <!--text -->
-  <form id="presetColors" method="get" action="popup.html" onsubmit="return setStyle()" class="centertext">
-    <h5><font face="dyslexie">Change Theme:</font></h5>
-    <select name="colorselect" id="colorselect">
-      <option value="none">Select Color Theme</option>
-      <option value="#FDFFFD">Default Setting</option>
-      <option value="#FFF">High Contrast: White / Black Text</option>
-      <option value="#FFFFFE">White / Blue Text</option>
-      <option value="#FFFEFF">White / Violet Text</option>
-      <option value="null">- - - - Light Backgrounds: - - - - -</option>
-      <option value="#FFFFF1">Cream (Black Text)</option>
-      <option value="#FFFFF2">Cream 2 (Blue Text)</option>
-      <option value="#FFC">Yellow (Black Text)</option>
-      <option value="#FFFFCD">Yellow 2 (Blue Text)</option>
-      <option value="#9CF">Sky Blue (Black Text)</option>
-      <option value="#0CD">Turquoise (Black Text)</option>
-      <option value="#99C">Periwinkle (Black Text)</option>
-      <option value="#9C6">Olive Green (Black Text)</option>
-      <option value="#9FC">Sea Green (Black Text)</option>
-      <option value="#FD8">Apricot (Dark Brown Text)</option>
-      <option value="#E90">Orange (Dark Brown Text)</option>
-      <option value="null">- - - Dark Backgrounds - - - -</option>
-      <option value="#000">Black (White Text)</option>
-      <option value="#212121">Charcoal (Green Text)</option>
-      <option value="#000001">Black (Gold Text)</option>
-      <option value="#006">Ultramarine (White Text)</option>
-      <option value="#00C">Electric Blue (White Text)</option>
-      <option value="#303">Deep Purple (White Text)</option>
-      <option value="#590">Corina Green (Black Text)</option>
-      <option value="#999">Grey (White Text)</option>
-      <option value="#C69">Rosebud (White Text)</option>
-    </select>
-    <input type="submit" value="Set Color" title="Choose New Color Scheme" />
-  </form>
+    <!--text -->
+    <form id="presetColors" method="get" action="popup.html" onsubmit="return setStyle()" class="centertext">
+      <h5><font face="dyslexie">Change Theme:</font></h5>
+      <select name="colorselect" id="colorselect">
+        <option value="none">Select Color Theme</option>
+        <option value="#FDFFFD">Default Setting</option>
+        <option value="#FFF">High Contrast: White / Black Text</option>
+        <option value="#FFFFFE">White / Blue Text</option>
+        <option value="#FFFEFF">White / Violet Text</option>
+        <option value="null">- - - - Light Backgrounds: - - - - -</option>
+        <option value="#FFFFF1">Cream (Black Text)</option>
+        <option value="#FFFFF2">Cream 2 (Blue Text)</option>
+        <option value="#FFC">Yellow (Black Text)</option>
+        <option value="#FFFFCD">Yellow 2 (Blue Text)</option>
+        <option value="#9CF">Sky Blue (Black Text)</option>
+        <option value="#0CD">Turquoise (Black Text)</option>
+        <option value="#99C">Periwinkle (Black Text)</option>
+        <option value="#9C6">Olive Green (Black Text)</option>
+        <option value="#9FC">Sea Green (Black Text)</option>
+        <option value="#FD8">Apricot (Dark Brown Text)</option>
+        <option value="#E90">Orange (Dark Brown Text)</option>
+        <option value="null">- - - Dark Backgrounds - - - -</option>
+        <option value="#000">Black (White Text)</option>
+        <option value="#212121">Charcoal (Green Text)</option>
+        <option value="#000001">Black (Gold Text)</option>
+        <option value="#006">Ultramarine (White Text)</option>
+        <option value="#00C">Electric Blue (White Text)</option>
+        <option value="#303">Deep Purple (White Text)</option>
+        <option value="#590">Corina Green (Black Text)</option>
+        <option value="#999">Grey (White Text)</option>
+        <option value="#C69">Rosebud (White Text)</option>
+      </select>
+      <input type="submit" value="Set Color" title="Choose New Color Scheme" />
+    </form>
 
-  <h5><font face="dyslexie">OR</font></h5>
+    <h5><font face="dyslexie">OR</font></h5>
 
-  <h5><font face="dyslexie">Select Text Color</font></h5>
+    <h5><font face="dyslexie">Select Text Color</font></h5>
 
-  <div id="picker"></div>
+    <div id="picker"></div>
 
-  <h5><font face="dyslexie">Select Background Color</font></h5>
+    <h5><font face="dyslexie">Select Background Color</font></h5>
 
-  <div id="pickerback"></div>
+    <div id="pickerback"></div>
 
-  <form id="fontSize" method="get" action="customize.htm" onsubmit="return setSize()" class="centertext">
-    <h5><font face="dyslexie">Change Font Size:</font></h5>
-    <select name="sizeselect" id="sizeselect">
-      <option value="none">Select Font Size</option>
-      <option value="x-small">Very Small</option>
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
-      <option value="x-large">Very Large</option>
-      <option value="xx-large">Huge</option>
-    </select>
-    <input type="submit" value="Set Font Size" title="Set Font Size" />
-  </form>
+    <form id="fontSize" method="get" action="customize.htm" onsubmit="return setSize()" class="centertext">
+      <h5><font face="dyslexie">Change Font Size:</font></h5>
+      <select name="sizeselect" id="sizeselect">
+        <option value="none">Select Font Size</option>
+        <option value="x-small">Very Small</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="x-large">Very Large</option>
+        <option value="xx-large">Huge</option>
+      </select>
+      <input type="submit" value="Set Font Size" title="Set Font Size" />
+    </form>
 
-  <!-- RSPEAK_START -->
-  <h6>
-    <font face="dyslexie">
-      The Dyslexie Font is designed by Christian Boer.
-      The Dyslexie font is also available as a
-      <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.
-    </font>
-  </h6>
-</body>
+    <h6>
+      <font face="dyslexie">
+        The Dyslexie Font is designed by Christian Boer.
+        The Dyslexie font is also available as a
+        <a href="http://www.dyslexiefont.com/" target="_blank">free download</a>.
+      </font>
+    </h6>
+  </body>
 </html>
